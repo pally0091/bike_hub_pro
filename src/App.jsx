@@ -1,13 +1,25 @@
 /* eslint-disable react/no-unescaped-entities */
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import "./App.css";
+import Main from "./Components/Main";
+import Home from "./Components/Home/Home";
 
 function App() {
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Main></Main>,
+      children: [
+        {
+          path: "/",
+          element: <Home></Home>,
+        },
+      ],
+    },
+  ]);
   return (
     <>
-      <div>
-        <h1>Bike Hub Pro</h1>
-        <p>Your Bike's Best Friend: Welcome to Bike Hub Pro!</p>
-      </div>
+      <RouterProvider router={router}></RouterProvider>
     </>
   );
 }
