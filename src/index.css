@@ -5,10 +5,24 @@
 body {
   text-align: center;
   color: white;
+  background-image: linear-gradient(to right, #8a2e2e, #001b92, #8a2e2e);
 }
 a {
   text-decoration: none;
 }
 a:hover {
   text-decoration: none;
+}
+#nav-name {
+  background-image: linear-gradient(to top, #ff0000, #032b99);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3.5em;
+  font-weight: 900;
+  transition: all 0.8s;
+}
+#nav-btn:hover #nav-name {
+  background-image: linear-gradient(to top, #032b99, #ff0000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
