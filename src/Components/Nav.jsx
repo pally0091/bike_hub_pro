@@ -1,10 +1,11 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Nav = () => {
   return (
     <div>
+      {/* navbar 1  */}
       <div className="navbar bg-gradient-to-r from-slate-200 to-slate-700">
         <Link to="/">
           <button
@@ -15,6 +16,10 @@ const Nav = () => {
           </button>
         </Link>
       </div>
+      {/* navbar 2  */}
+      <nav className="py-3">
+        <NavLink>A</NavLink>
+      </nav>
     </div>
   );
 };
