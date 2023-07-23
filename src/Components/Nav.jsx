@@ -6,7 +6,7 @@ const Nav = () => {
   return (
     <div>
       {/* navbar 1  */}
-      <div className="navbar bg-gradient-to-r from-slate-200 to-slate-700">
+      <div className="navbar bg-gradient-to-r from-slate-200 via-[#8a2e2e] to-[#001b92]">
         <Link to="/">
           <button
             id="nav-btn"
