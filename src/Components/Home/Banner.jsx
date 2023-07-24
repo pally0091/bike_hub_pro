@@ -5,7 +5,7 @@ import bannerbike from "../../assets/IMGS/header-bike.png";
 
 const Banner = () => {
   return (
-    <div className="flex flex-row items-center w-10/12 mx-auto py-10">
+    <div className="flex flex-row items-center w-10/12 mx-auto py-10 border-b">
       <div className="w-1/2 text-left">
         <h1 className="text-5xl text-white my-4 font-bold ">
           Bike Hub <span className="text-red-500">Pro</span>
