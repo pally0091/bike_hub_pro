@@ -8,6 +8,9 @@ body {
   background-image: linear-gradient(to right, #864747, #3e4c8a, #864747);
   font-family: "Acme", sans-serif;
 }
+h1 h2 h3 h4 h5 h6 {
+  font-family: "Acme", sans-serif;
+}
 a {
   text-decoration: none;
 }
@@ -23,8 +26,8 @@ a.active::after {
   position: absolute;
   left: 0;
   bottom: 0;
-  height: 2px; 
-  width: 100%; 
+  height: 2px;
+  width: 100%;
   background-color: white;
 }
 #nav-name {
@@ -35,7 +38,6 @@ a.active::after {
   font-weight: 900;
   transition: all 0.8s;
   font-family: "Nova Round", cursive;
-  
 }
 #nav-btn:hover #nav-name {
   background-image: linear-gradient(to top, #032b99, #ff0000);

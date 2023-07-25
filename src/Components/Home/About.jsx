@@ -15,7 +15,7 @@ const About = () => {
       </div>
 
       {/* About Section */}
-      <div className="lg:w-1/2 max-[425px]:w-11/12 mx-auto py-4 px-6 text-justify">
+      <div className="lg:w-1/2 max-[425px]:w-11/12 mx-auto py-10 px-6 text-justify bg-black bg-opacity-60 rounded-2xl">
         <h1 className="text-white text-3xl text-center underline my-4 ">
           About
         </h1>
