@@ -96,7 +96,7 @@ const Bikes = () => {
     },
   ];
 
-  console.log(bikes);
+  // console.log(bikes);
 
   return (
     <div>
