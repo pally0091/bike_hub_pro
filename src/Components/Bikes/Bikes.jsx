@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-
+import Bike from "./Bike";
 const Bikes = () => {
   const bikes = [
     {
@@ -100,7 +100,18 @@ const Bikes = () => {
 
   return (
     <div>
-      <p>bikes</p>
+      <h4 className="text-white font-bold text-4xl my-3 italic">
+        Here is our Collections
+      </h4>
+      <p className="text-lg">Find your desired one</p>
+      <div className="grid grid-cols-3 gap-3 w-11/12 mx-auto">
+        {bikes.map((bike) => (
+          <Bike
+            key={bike.id}
+            bike={bike}
+          ></Bike>
+        ))}
+      </div>
     </div>
   );
 };
