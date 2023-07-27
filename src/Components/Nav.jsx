@@ -17,7 +17,7 @@ const Nav = () => {
         </Link>
       </div>
       {/* navbar 2  */}
-      <nav className="py-3 border-b-4 border-double">
+      <nav className="py-3 border-b-4 border-double ">
         <NavLink
           to="/bikes"
           className="text-white px-3 py-1 mx-2 hover:bg-white hover:text-black transition-all duration-700"

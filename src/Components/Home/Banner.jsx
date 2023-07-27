@@ -2,6 +2,7 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import bannerbike from "../../assets/IMGS/header-bike.png";
+import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
@@ -16,6 +17,13 @@ const Banner = () => {
         <p className="text-lg">
           Your Bike's Best Friend : Welcome to Bike Hub Pro!
         </p>
+        <div className="w-1/4 mt-3">
+          <Link to="/bikes">
+            <button className="bg-red-400 py-2 px-4 w-full rounded-full hover:bg-red-300 hover:text-black transition-all duration-500">
+              Show All
+            </button>
+          </Link>
+        </div>
       </div>
       <div className="lg:w-1/2 md:w-1/2 max-[425px]:w-[95%] m-auto">
         <img
