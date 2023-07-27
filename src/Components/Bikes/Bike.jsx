@@ -17,10 +17,10 @@ const Bike = ({ bike }) => {
         />
       </div>
       <h5 className="text-white my-2 font-semibold">Model : {model}</h5>
-      <p className="text-left my-1">Price : {price}</p>
+      <p className="text-left my-1">Price : {price} INR</p>
       <hr className="w-full" />
       <hr className="w-1/2 mx-auto mt-2" />
-      <div className="bg-black h-fit bg-opacity-50 py-1 px-2 rounded-md">
+      <div className="bg-black bg-opacity-40 py-1 px-2 rounded-md">
         <p className="my-2">{details}</p>
         <p className="my-2 text-justify">
           <span className="underline">Spacifications</span> : {spc}
