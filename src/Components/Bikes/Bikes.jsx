@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 /* eslint-disable no-unused-vars */
 import React from "react";
 import Bike from "./Bike";
@@ -114,7 +115,10 @@ const Bikes = () => {
         Here is our Collections
       </h4>
       <p className="text-lg">Find your desired one</p>
-      <div className="grid grid-cols-3 gap-3 w-11/12 mx-auto">
+      <div
+        className="grid grid-cols-3 gap-3 w-11/12 mx-auto"
+        uk-scrollspy="cls: uk-animation-slide-bottom; target: .b-card; delay: 300; repeat: true"
+      >
         {bikes.map((bike) => (
           <Bike
             key={bike.id}

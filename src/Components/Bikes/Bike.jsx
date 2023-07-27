@@ -5,7 +5,7 @@ import React from "react";
 const Bike = ({ bike }) => {
   const { bikeName, model, details, image, spc, price } = bike;
   return (
-    <div className="relative border border-white px-3 py-2 rounded-md">
+    <div className="relative border border-white px-3 py-2 rounded-md b-card">
       <h1 className="my-2 text-2xl italic font-semibold text-black shadow-inner shadow-black py-1 rounded-tl-full rounded-br-full bg-white">
         {bikeName}
       </h1>
