@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
 import React from "react";
@@ -7,7 +8,10 @@ const About = () => {
   return (
     <div className="flex lg:w-10/12 max-[425px]:w-11/12 lg:flex-row max-[425px]:flex-col mx-auto items-center my-10 ">
       {/* Bike Section */}
-      <div className="lg:w-1/2 max-[425px]:w-11/12 mx-auto p-4">
+      <div
+        className="lg:w-1/2 max-[425px]:w-11/12 mx-auto p-4"
+        uk-scrollspy="cls: uk-animation-slide-left; repeat: true"
+      >
         <img
           src={bike3}
           alt="Bike"
@@ -15,7 +19,10 @@ const About = () => {
       </div>
 
       {/* About Section */}
-      <div className="lg:w-1/2 max-[425px]:w-11/12 mx-auto py-10 px-6 text-justify bg-black bg-opacity-60 rounded-2xl">
+      <div
+        className="lg:w-1/2 max-[425px]:w-11/12 mx-auto py-10 px-6 text-justify bg-black bg-opacity-60 rounded-2xl"
+        uk-scrollspy="cls: uk-animation-slide-right; repeat: true"
+      >
         <h1 className="text-white text-3xl text-center underline my-4 ">
           About
         </h1>

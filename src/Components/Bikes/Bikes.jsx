@@ -92,7 +92,7 @@ const Bikes = () => {
       image:
         "https://cdp.azureedge.net/products/USA/IDN/2022/MC/CRUISER/CHIEFTAIN_LIMITED/49/SILVER_QUARTZ_METALLIC/2000000001.jpg",
       spc: "Thunderstroke 111 V-twin, 1,811cc, classic cruiser with modern amenities, comfortable touring design, infotainment system, and optional customizations.",
-      price: 1840000,
+      price: 2240000,
     },
     {
       id: 10,
