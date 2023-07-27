@@ -10,7 +10,7 @@ const Nav = () => {
         <Link to="/">
           <button
             id="nav-btn"
-            className=" normal-case border-4 border-double border-white px-4 rounded-3xl hover:bg-slate-500 transition-all duration-700"
+            className=" normal-case border-4 border-double border-white px-4 rounded-3xl transition-all duration-700"
           >
             <p id="nav-name">Bike Hub</p>
           </button>

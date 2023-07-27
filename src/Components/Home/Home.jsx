@@ -3,6 +3,7 @@ import React from "react";
 import Banner from "./Banner";
 import About from "./About";
 import Client from "./Client";
+import BestBike from "./BestBike";
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <Banner></Banner>
       <About></About>
       <Client></Client>
+      <BestBike></BestBike>
     </div>
   );
 };
