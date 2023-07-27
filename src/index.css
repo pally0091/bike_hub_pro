@@ -45,6 +45,12 @@ a.active::after {
 #banner-name span {
   -webkit-text-stroke: 1px white;
 }
+card {
+  box-shadow: -4px -4px 4px black;
+}
+.c-name {
+  text-shadow: 0 3px 3px black;
+}
 @media screen and (max-width: 425px) {
   #nav-name {
     font-size: 2em;
