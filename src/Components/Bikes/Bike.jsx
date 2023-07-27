@@ -9,7 +9,7 @@ const Bike = ({ bike }) => {
       <h1 className="my-2 text-2xl italic font-semibold text-black shadow-inner shadow-black py-1 rounded-tl-full rounded-br-full bg-white">
         {bikeName}
       </h1>
-      <div className="w-80 h-56 mx-auto">
+      <div className="w-[90%] h-56 mx-auto">
         <img
           className="w-full h-full rounded-md"
           src={image}

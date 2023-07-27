@@ -116,7 +116,7 @@ const Bikes = () => {
       </h4>
       <p className="text-lg">Find your desired one</p>
       <div
-        className="grid grid-cols-3 gap-3 w-11/12 mx-auto"
+        className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 max-[425px]:grid-cols-1 gap-3 w-11/12 mx-auto"
         uk-scrollspy="cls: uk-animation-slide-bottom; target: .b-card; delay: 300; repeat: true"
       >
         {bikes.map((bike) => (
