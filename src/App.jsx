@@ -4,6 +4,7 @@ import "./App.css";
 import Main from "./Components/Main";
 import Home from "./Components/Home/Home";
 import Bikes from "./Components/Bikes/Bikes";
+import Service from "./Components/Service/Service";
 
 function App() {
   const router = createBrowserRouter([
@@ -18,6 +19,10 @@ function App() {
         {
           path: "/bikes",
           element: <Bikes></Bikes>,
+        },
+        {
+          path: "/service",
+          element: <Service></Service>,
         },
       ],
     },

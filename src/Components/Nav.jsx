@@ -24,6 +24,12 @@ const Nav = () => {
         >
           All Bikes
         </NavLink>
+        <NavLink
+          to="/service"
+          className="text-white px-3 py-1 mx-2 hover:bg-white hover:text-black transition-all duration-700"
+        >
+          Our Services
+        </NavLink>
       </nav>
     </div>
   );
