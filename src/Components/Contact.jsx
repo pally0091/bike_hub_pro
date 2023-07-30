@@ -1,12 +1,118 @@
 /* eslint-disable no-unused-vars */
-import React from 'react';
+import React, { useState } from "react";
 
 const Contact = () => {
-    return (
-        <div>
-            <p>Contacts </p>
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const { name, email, message } = formData;
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    console.log("Form submitted:", formData);
+  };
+
+  const isFormValid =
+    name.trim() !== "" && email.trim() !== "" && message.trim() !== "";
+
+  return (
+    <div className="flex items-center h-[100vh] w-11/12 mx-auto">
+      <div className="w-1/2">
+        <div className="flex justify-center items-center min-h-fit py-16 bg-transparent text-left">
+          <form
+            className="bg-white bg-opacity-40 shadow-md rounded px-8 pt-6 pb-8 mb-4 w-[90%] mx-auto"
+            onSubmit={handleSubmit}
+          >
+            <div className="mb-4">
+              <label
+                className="block text-gray-700 text-sm font-bold mb-2"
+                htmlFor="name"
+              >
+                Name
+              </label>
+              <input
+                className="shadow appearance-none bg-white border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="name"
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                value={name}
+                onChange={handleChange}
+              />
+            </div>
+            <div className="mb-4">
+              <label
+                className="block text-gray-700 text-sm font-bold mb-2"
+                htmlFor="email"
+              >
+                Email
+              </label>
+              <input
+                className="shadow appearance-none bg-white border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="email"
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                value={email}
+                onChange={handleChange}
+              />
+            </div>
+            <div className="mb-6">
+              <label
+                className="block text-gray-700 text-sm font-bold mb-2"
+                htmlFor="message"
+              >
+                Message
+              </label>
+              <textarea
+                className="shadow appearance-none bg-white border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Your Message"
+                value={message}
+                onChange={handleChange}
+              ></textarea>
+            </div>
+            <div className="flex items-center justify-center">
+              <button
+                className={`bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline ${
+                  isFormValid ? "" : "opacity-50 cursor-not-allowed"
+                }`}
+                type="submit"
+                disabled={!isFormValid}
+              >
+                Send Message
+              </button>
+            </div>
+          </form>
         </div>
-    );
+      </div>
+      <div className="w-1/2">
+        <div>
+          <p>cards</p>
+        </div>
+        <div>
+          <p>cards</p>
+        </div>
+        <div>
+          <p>cards</p>
+        </div>
+        <div>
+          <p>cards</p>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default Contact;
