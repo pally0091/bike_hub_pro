@@ -25,8 +25,8 @@ const Contact = () => {
     name.trim() !== "" && email.trim() !== "" && message.trim() !== "";
 
   return (
-    <div className="flex items-center h-[100vh] w-11/12 mx-auto">
-      <div className="w-1/2">
+    <div className="flex flex-col md:flex-row lg:flex-row items-center  w-11/12 mx-auto">
+      <div className="w-full md:w-[60%] lg:w-1/2">
         <div className="flex justify-center items-center min-h-fit py-16 bg-transparent text-left">
           <form
             className="bg-white bg-opacity-40 shadow-md rounded px-8 pt-6 pb-8 mb-4 w-[90%] mx-auto"
@@ -97,18 +97,17 @@ const Contact = () => {
           </form>
         </div>
       </div>
-      <div className="w-1/2">
-        <div>
-          <p>cards</p>
+      <div className="flex flex-wrap justify-center items-center min-h-fit py-16 bg-transparent w-full md:w-[40%] lg:w-1/2  gap-5 text-black text-center ">
+        <div className="px-4 w-[90%] md:w-[90%] lg:w-[45%] h-28 py-8 bg-white bg-opacity-60 rounded-md hover:-translate-y-3 hover:scale-105 transition-all duration-300">
+          <p>A-36, xyz moto plaza, UAE</p>
         </div>
-        <div>
-          <p>cards</p>
+        <div className="px-4 w-[90%] md:w-[90%] lg:w-[45%] h-28 py-8  bg-white bg-opacity-60 rounded-md hover:-translate-y-3 hover:scale-105 transition-all duration-300">
+          <p>bikehub1@bikhub.com</p>
+          <p>bike_help@bikhub1.com</p>
         </div>
-        <div>
-          <p>cards</p>
-        </div>
-        <div>
-          <p>cards</p>
+        <div className=" px-4 w-[90%] md:w-[90%] lg:w-[45%]  h-28 py-8 bg-white bg-opacity-60 rounded-md hover:-translate-y-3 hover:scale-105 transition-all duration-300">
+          <p>+1-258369654</p>
+          <p>+1-258963456</p>
         </div>
       </div>
     </div>
