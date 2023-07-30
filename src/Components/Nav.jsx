@@ -30,6 +30,12 @@ const Nav = () => {
         >
           Our Services
         </NavLink>
+        <NavLink
+          to="/contact"
+          className="text-white px-3 py-1 mx-2 hover:bg-white hover:text-black transition-all duration-700"
+        >
+          Contact Us
+        </NavLink>
       </nav>
     </div>
   );

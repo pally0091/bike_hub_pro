@@ -5,6 +5,7 @@ import Main from "./Components/Main";
 import Home from "./Components/Home/Home";
 import Bikes from "./Components/Bikes/Bikes";
 import Service from "./Components/Service/Service";
+import Contact from "./Components/Contact";
 
 function App() {
   const router = createBrowserRouter([
@@ -23,6 +24,10 @@ function App() {
         {
           path: "/service",
           element: <Service></Service>,
+        },
+        {
+          path: "/contact",
+          element: <Contact></Contact>,
         },
       ],
     },
