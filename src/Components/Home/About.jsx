@@ -6,7 +6,7 @@ import bike3 from "../../assets/IMGS/bike-3.png";
 
 const About = () => {
   return (
-    <div className="flex lg:w-10/12 max-[425px]:w-11/12 lg:flex-row max-[425px]:flex-col mx-auto items-center my-10 ">
+    <div className="flex w-11/12 md:w-10/12 lg:w-10/12 flex-col lg:flex-row mx-auto items-center my-10 ">
       {/* Bike Section */}
       <div
         className="lg:w-1/2 max-[425px]:w-11/12 mx-auto p-4"

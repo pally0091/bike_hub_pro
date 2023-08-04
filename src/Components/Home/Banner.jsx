@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
-    <div className="flex lg:flex-row md:flex-row max-[425px]:flex-col-reverse items-center lg:w-10/12 md:w-[95%] max-[425px]:w-full mx-auto py-10 border-b">
+    <div className="flex flex-col-reverse lg:flex-row md:flex-rowitems-center lg:w-10/12 md:w-[95%] max-[425px]:w-full mx-auto py-10 border-b">
       <div className="lg:w-1/2 md:w-1/2 max-[425px]:w-[95%] m-auto text-left">
         <h1
           id="banner-name"
