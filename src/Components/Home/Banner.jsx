@@ -32,7 +32,10 @@ const Banner = () => {
         </div>
       </div>
       <div className="w-[95%] md:w-1/2 lg:w-1/2 m-auto text-left">
-        <div uk-slideshow="animation: fade; autoplay: true; autoplay-interval: 2500">
+        <div
+          uk-slideshow="animation: fade; autoplay: true; autoplay-interval: 2500"
+          className="uk-light"
+        >
           <div
             class="uk-position-relative uk-visible-toggle uk-light"
             tabindex="-1"
@@ -89,7 +92,7 @@ const Banner = () => {
             ></a>
           </div>
 
-          <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin"></ul>
+          <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin "></ul>
         </div>
       </div>
     </div>
